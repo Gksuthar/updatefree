@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Home1 from './components/Hero';
+import Navbar from './components/Navbar';
+import WelcomeSection from './components/WelcomeSection';
+import Services from './components/service';
+import WhyChooseObiztec from './components/WhyChooseObiztec';
+import Footer from './components/Footer';
+// import GetStartedSection from './components/GetStartedSection';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Navbar/> */}
+      <Home1/>
+      <WelcomeSection/>
+      <Services/>
+      <WhyChooseObiztec/> 
+      <Footer/>
+    </>
   );
 }
 
